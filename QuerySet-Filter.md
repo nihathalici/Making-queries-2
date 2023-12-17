@@ -35,3 +35,17 @@ def testing(request):
   }
   return HttpResponse(template.render(context, request))
 ```
+
+* Field Lookups
+* Example: Use the __startswith keyword:
+
+```shell
+.filter(firstname__startswith='L');
+```
+
+* Field Lookups Syntax
+* Example: Return the records where firstname 
+* starts with the letter 'L': 
+```shell
+mydata = Member.objects.filter(firstname__startswith='L').values()
+```
