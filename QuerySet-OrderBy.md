@@ -13,3 +13,11 @@ mydata = Member.objects.all().order_by('firstname').values()
 ```shell
 mydata = Member.objects.all().order_by('-firstname').values()
 ```
+
+* Multiple Order Bys
+* Example: Order the result first by lastname ascending, 
+* then descending on id:
+
+```shell
+mydata = Member.objects.all().order_by('lastname', '-id').values()
+```
