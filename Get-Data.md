@@ -15,9 +15,7 @@ def testing(request):
 ```
 
 * The values() Method
-* The values() method allows you to return each object 
-* as a Python dictionary, with the names and values 
-* as key/value pairs:
+* The values() method allows you to return each object as a Python dictionary, with the names and values as key/value pairs:
 ```python3
 # views.py
 from django.http import HttpResponse
